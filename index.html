@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle Monsters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Dancing+Script:wght@700&family=Meddon&display=swap" rel="stylesheet">
+
+    <style>
+         body{
+            font-family: 'Baloo Bhai 2', cursive;
+             background:url('/back4.jpg');
+             background-size:1300px 600px  ; 
+        }
+        
+        .left{
+            color: yellow;
+            /* border: 2px solid rgb(146, 146, 146); */
+            display:inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            line-height: 0px;
+            text-align: justify;
+            font-family: 'Meddon', cursive;               font-size: 30px;
+        }
+        .log2{
+            color: white;
+            display:inline-block;
+            position: absolute;
+            top: 110px;
+            left: 35px;
+            line-height: 0px;
+            text-align: justify;
+            font-family: 'Meddon', cursive;                  font-size: 30px;
+
+        }
+        .left img{
+            width:110px;
+            height: 110px;
+            filter:invert(100%);    
+        }
+        .mid{
+            display: block;
+            width: 59%; 
+            margin: 20px 250px;
+            color: white;
+            /* border: 2px solid skyblue; */
+        }
+        .right{
+            display:inline-block;
+            color: white;
+            /* border: 1.5px solid rgb(185, 197, 15); */
+            position: absolute;
+            top:30px;
+            right: 23px;
+        }
+        .navitems{
+            display:inline-block;
+        }
+        .navitems li{
+            display: inline-block;
+        }
+        .navitems  li a{
+            color: white;
+            text-decoration: none;
+            padding: 0px 17px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .navitems li a:hover,.navitems li a.active{
+            color: black;
+            text-decoration: underline;
+            background-color: rgb(248, 248, 56);
+
+        }
+        .name{
+            color: yellow;
+            display: inline-block;
+            margin-top: 40px;
+            margin-left: 350px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 60px;
+        }
+        .name2{
+            color: white;
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 60px;
+        }
+        .btn{
+            margin: 0px 6px;
+            /* padding: 5px 4px; */
+            color: white;
+            background-color: black;
+            border: 2px solid rgb(65, 63, 63);
+            border-radius: 10px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: rgb(243, 243, 79);
+            text-decoration: underline;
+            /* background-color: gray; */
+            font-weight: bold;
+        }
+        hr{
+            margin-left: 533px;
+            
+        }
+        .container{
+            border: 2px solid rgb(63, 61, 61);
+            border-radius: 4px;
+            width: 35%;
+            margin: 0px 70px;
+            color: white;
+            padding: 4px 4px;
+        }
+        .container h1{
+            text-align: center;
+            line-height: 30px;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            padding: 2px 2px;
+            margin: 9px auto;
+            width: 350px;
+            font-size: 20px;
+            border-radius: 10px;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+        .container button{
+            display: block;
+            margin: auto;
+            width: 40%;
+            /* padding: 4px 4px; */
+            border-radius: 7px;
+            border: 2px solid grey;
+            background-color: black;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 22px;
+
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <header class="header">
+        
+        <!-- left box for logo -->
+        <div class="left">
+        <img src="/143396909-gym-logo-removebg.png" alt="">  
+             <div>M</div>
+             <div class="log2"> M</div>
+        </div>
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <ul class="navitems">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Join us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <!-- mid box for buttons -->
+        <div class="right">
+            <button class="btn">Call us </button>
+            <button class="btn">Email us </button>
+            <button class="btn">Facebook</button>
+        </div>
+        <div class="name">
+            MUSCLE 
+        </div>
+        <div class="name2">
+            MONSTERS
+        </div>
+        <hr size="4" width="7%" color="yellow">
+        
+    </header>
+    <div class="container">
+        <h1>Become a member <div>Join Today</div>  </h1>
+        <form action="backend.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Contact Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="City">
+            </div>
+            <button class="button">Submit</button>
+        </form>
+        
+
+    </div>
+</body>
+</html>
